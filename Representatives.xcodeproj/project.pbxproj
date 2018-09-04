@@ -8,20 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		7E97195E213DE0480057EED2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E97195D213DE0480057EED2 /* AppDelegate.swift */; };
-		7E971960213DE0480057EED2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E97195F213DE0480057EED2 /* ViewController.swift */; };
 		7E971963213DE0480057EED2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E971961213DE0480057EED2 /* Main.storyboard */; };
 		7E971965213DE04E0057EED2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E971964213DE04E0057EED2 /* Assets.xcassets */; };
 		7E971968213DE04E0057EED2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7E971966213DE04E0057EED2 /* LaunchScreen.storyboard */; };
+		7E971970213DE0770057EED2 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E97196F213DE0770057EED2 /* Representative.swift */; };
+		7E971972213DE4C60057EED2 /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E971971213DE4C60057EED2 /* RepresentativeController.swift */; };
+		7E971976213E0AA70057EED2 /* StatesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E971975213E0AA60057EED2 /* StatesTableViewController.swift */; };
+		7E971978213E0E8F0057EED2 /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E971977213E0E8F0057EED2 /* StateDetailTableViewController.swift */; };
+		7E97197B213E0FD20057EED2 /* RepresentativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E97197A213E0FD20057EED2 /* RepresentativeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7E97195A213DE0480057EED2 /* Representatives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Representatives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E97195D213DE0480057EED2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7E97195F213DE0480057EED2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7E971962213DE0480057EED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7E971964213DE04E0057EED2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7E971967213DE04E0057EED2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7E971969213DE04E0057EED2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7E97196F213DE0770057EED2 /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		7E971971213DE4C60057EED2 /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
+		7E971975213E0AA60057EED2 /* StatesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatesTableViewController.swift; sourceTree = "<group>"; };
+		7E971977213E0E8F0057EED2 /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
+		7E97197A213E0FD20057EED2 /* RepresentativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +46,9 @@
 		7E971951213DE0480057EED2 = {
 			isa = PBXGroup;
 			children = (
+				7E971974213DE8D50057EED2 /* Model */,
+				7E971979213E0FA30057EED2 /* ViewController */,
+				7E971973213DE8820057EED2 /* ModelController */,
 				7E97195C213DE0480057EED2 /* Representatives */,
 				7E97195B213DE0480057EED2 /* Products */,
 			);
@@ -55,13 +66,38 @@
 			isa = PBXGroup;
 			children = (
 				7E97195D213DE0480057EED2 /* AppDelegate.swift */,
-				7E97195F213DE0480057EED2 /* ViewController.swift */,
 				7E971961213DE0480057EED2 /* Main.storyboard */,
 				7E971964213DE04E0057EED2 /* Assets.xcassets */,
 				7E971966213DE04E0057EED2 /* LaunchScreen.storyboard */,
 				7E971969213DE04E0057EED2 /* Info.plist */,
 			);
 			path = Representatives;
+			sourceTree = "<group>";
+		};
+		7E971973213DE8820057EED2 /* ModelController */ = {
+			isa = PBXGroup;
+			children = (
+				7E971971213DE4C60057EED2 /* RepresentativeController.swift */,
+			);
+			path = ModelController;
+			sourceTree = "<group>";
+		};
+		7E971974213DE8D50057EED2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E97196F213DE0770057EED2 /* Representative.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E971979213E0FA30057EED2 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7E971975213E0AA60057EED2 /* StatesTableViewController.swift */,
+				7E971977213E0E8F0057EED2 /* StateDetailTableViewController.swift */,
+				7E97197A213E0FD20057EED2 /* RepresentativeViewController.swift */,
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E971960213DE0480057EED2 /* ViewController.swift in Sources */,
 				7E97195E213DE0480057EED2 /* AppDelegate.swift in Sources */,
+				7E971976213E0AA70057EED2 /* StatesTableViewController.swift in Sources */,
+				7E971972213DE4C60057EED2 /* RepresentativeController.swift in Sources */,
+				7E97197B213E0FD20057EED2 /* RepresentativeViewController.swift in Sources */,
+				7E971978213E0E8F0057EED2 /* StateDetailTableViewController.swift in Sources */,
+				7E971970213DE0770057EED2 /* Representative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
